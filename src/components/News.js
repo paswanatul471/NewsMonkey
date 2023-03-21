@@ -80,7 +80,7 @@ export class News extends Component {
   }
   render() {
     return (
-      <div className='container my-3'>
+      <>
         <h2 className='mt-2'>NewsMonkey - Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h2>
         {/* {this.state.loading && <Gif/>} */}
         <InfiniteScroll
@@ -100,7 +100,7 @@ export class News extends Component {
               </div>
         </div>
         </InfiniteScroll>
-      </div>
+      </>
     )
   }
 }
